@@ -1,0 +1,3 @@
+verilog work "d_flip_flop_v.v"
+verilog work "Register-1bit.v"
+verilog work "register-8bit.v"
