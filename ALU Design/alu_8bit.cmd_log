@@ -1,0 +1,7 @@
+vhdtdtfi -lib work alu_8bit.vhd -prj computer -o alu_8bit.spl -module alu_8bit -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 alu_8bit.spl /home/ise/22201044/computer/alu_8bit.sym 
+vhdtdtfi -prj computer -o /home/ise/22201044/computer/alu_8bit.vhi -module alu_8bit -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work alu_8bit.vhd 
+vhdtdtfi -prj computer -o /home/ise/22201044/computer/alu_8bit.vhi -module alu_8bit -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work alu_8bit.vhd 
+vhdtdtfi -prj computer -o /home/ise/22201044/computer/alu_8bit.vhi -module alu_8bit -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work alu_8bit.vhd 
+vhdtdtfi -prj computer -o /home/ise/22201044/computer/alu_8bit.vhi -module alu_8bit -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work alu_8bit.vhd 
+xst -intstyle ise -ifn "/home/ise/22201044/computer/alu_8bit.xst" -ofn "/home/ise/22201044/computer/alu_8bit.syr" 
