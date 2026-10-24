@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/ise/xilinix/Mini_8bit_CPU_22201044/cpu_tb_isim_beh.exe" -prj "/home/ise/xilinix/Mini_8bit_CPU_22201044/cpu_tb_beh.prj" "work.cpu_tb" "work.glbl" 
