@@ -1,0 +1,49 @@
+ISim log file
+Running: /home/ise/xilinix/Mini_8bit_CPU_22201044/cpu_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ise/xilinix/Mini_8bit_CPU_22201044/cpu_tb_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
+ISim P.20131013 (signature 0xfbc00daa)
+----------------------------------------------------------------------
+INFO:Security:61 - The XILINXD_LICENSE_FILE environment variable is not set.
+INFO:Security:63 - The LM_LICENSE_FILE environment variable is not set.
+INFO:Security:68 - For more information or for assistance in obtaining 
+ a license, please run the Xilinx License Configuration Manager
+       (xlcm or "Manage Xilinx Licenses".)
+INFO:Security:68a - user is ise, on host localhost.localdomain.
+INFO:Security:15 - A feature for ISIM was found but is for the wrong hostid.
+ERROR:Security:14 - No feature was available for 'ISIM'.
+
+Invalid host.
+ The hostid of this system does not match the hostid
+ specified in the license file.
+Feature:       ISIM
+Hostid:        08002768c935
+License path:  /home/ise/.Xilinx/Xilinx.lic:/opt/Xilinx/14.7/ISE_DS/ISE//data/*.lic:/opt/Xilinx/14.7/ISE_DS/ISE//coregen/core_licenses/Xilinx.lic:/opt/Xilinx/14.7/ISE_DS/ISE//coregen/core_licenses/XilinxFree.lic:/opt/Xilinx/14.7/ISE_DS/EDK/data/core_licenses/Xilinx.lic:
+FLEXnet Licensing error:-9,57
+For further information, refer to the FLEXnet Licensing documentation,
+available at "www.flexerasoftware.com".
+----------------------------------------------------------------------
+WARNING: A full ISim License cannot be checked out due to the issues listed above. Please use Xilinx License Configuration Manager to fix these issues in order to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+PASS cycle 0 | exec PC=0 instr=000 | ACC=00 Z=1 R=00 nextPC=0
+PASS cycle 1 | exec PC=0 instr=11e | ACC=1e Z=0 R=00 nextPC=1
+PASS cycle 2 | exec PC=1 instr=a00 | ACC=1e Z=0 R=1e nextPC=2
+PASS cycle 3 | exec PC=2 instr=222 | ACC=40 Z=0 R=1e nextPC=3
+PASS cycle 4 | exec PC=3 instr=460 | ACC=40 Z=0 R=1e nextPC=4
+PASS cycle 5 | exec PC=4 instr=b00 | ACC=1e Z=0 R=1e nextPC=5
+PASS cycle 6 | exec PC=5 instr=201 | ACC=1f Z=0 R=1e nextPC=6
+PASS cycle 7 | exec PC=6 instr=40f | ACC=0f Z=0 R=1e nextPC=7
+PASS cycle 8 | exec PC=7 instr=a00 | ACC=0f Z=0 R=0f nextPC=8
+PASS cycle 9 | exec PC=8 instr=100 | ACC=00 Z=1 R=0f nextPC=9
+PASS cycle 10 | exec PC=9 instr=b00 | ACC=0f Z=0 R=0f nextPC=10
+FINAL OK: ACC=0F R=0F Z=0 PC=10
+EXTRA PASS: NOP at PC=10 changed only PC (now 11)
+=== cpu_tb: ALL TESTS PASSED (matches Appendix B) ===
+Stopped at time : 116 ns : File "/home/ise/xilinix/Mini_8bit_CPU_22201044/cpu_tb.v" Line 107
+# exit 0
