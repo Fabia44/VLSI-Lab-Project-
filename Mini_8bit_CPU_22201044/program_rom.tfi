@@ -1,0 +1,10 @@
+
+
+
+// Instantiate the module
+program_rom instance_name (
+    .ADDR(ADDR), 
+    .INSTR(INSTR)
+    );
+
+

@@ -1,0 +1,4 @@
+vhdtdtfi -lang verilog -prj Mini_8bit_CPU_22201044 -o /home/ise/xilinix/Mini_8bit_CPU_22201044/program_rom.tfi -lib work /home/ise/xilinix/Mini_8bit_CPU_22201044//program_rom.v -module program_rom -template /opt/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work /home/ise/xilinix/Mini_8bit_CPU_22201044/program_rom.v -lang verilog -prj Mini_8bit_CPU_22201044 -o program_rom.spl -module program_rom -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 program_rom.spl /home/ise/xilinix/Mini_8bit_CPU_22201044/program_rom.sym 
+xst -intstyle ise -ifn "/home/ise/xilinix/Mini_8bit_CPU_22201044/program_rom.xst" -ofn "/home/ise/xilinix/Mini_8bit_CPU_22201044/program_rom.syr" 
