@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/xilinix/Mini_8bit_CPU_22201044/registers.xst" -ofn "/home/ise/xilinix/Mini_8bit_CPU_22201044/registers.syr" 
